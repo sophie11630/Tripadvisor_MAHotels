@@ -34,10 +34,6 @@ dta["restaurants_nearby"] = dta["restaurants_nearby"].replace(0,rest_mean)
 nbattr_mean = round(dta[dta["nearby_attractions"]!=0]["nearby_attractions"].mean())
 dta["nearby_attractions"] = dta["nearby_attractions"].replace(0,nbattr_mean)
 
-fill_col = ['great_for_walker_rating','restaurants_nearby', 'nearby_attractions',
-            'ranking','description','location_rating', 'cleanliness_rating', 
-            'service_rating','value_rating', 'QA_number', 'room_tips_number']
-
 locrat_mean = round(dta[dta["location_rating"]!=0]["location_rating"].mean())
 dta["location_rating"] = dta["location_rating"].replace(0,locrat_mean)
 
@@ -56,7 +52,5 @@ dta["QA_number"] = dta["QA_number"].replace(0,qa_mean)
 tip_mean = round(dta[dta["room_tips_number"]!=0]["room_tips_number"].mean())
 dta["room_tips_number"] = dta["room_tips_number"].replace(0,tip_mean)
 
-
-dta = dta.drop("Unnamed: 0", axis = 1)
 dta.to_csv("Massachusetts_hotels.csv")
 
