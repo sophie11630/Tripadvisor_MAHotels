@@ -10,6 +10,7 @@ Created on Thu Dec  3 21:42:01 2020
 import os
 import pandas as pd
 import time
+#import datetime
 from bs4 import BeautifulSoup
 from selenium import webdriver
 pd.set_option('display.max_rows', 10)
@@ -46,6 +47,11 @@ for i in range(16):
     for r in range(len(hotels)):
         one_hotel = {}
         time.sleep(1)
+        
+        #if useful: find scrapping_date, url and attach them to one_review dictionary
+        #one_hotel['scrapping_date'] = datetime.datetime.now()
+        #one_hotel['google_url'] = driver.current_url
+        
         soup = BeautifulSoup(hotels[r].get_attribute('innerHTML'))
         
         parentHandle = driver.current_window_handle
