@@ -1,5 +1,5 @@
 ### BUS256: Marketing Analytics
-### Final Project (Part II): Tripadvisor_MAHotels_Scraper
+### Final Project (Part II): Tripadvisor_MAHotels
 I will Python to scrape some Massachusetts hotels data on Tripadvisor, and use machine learning methods to train the model and predict customers' rating with some quantitative data.
 ### Content
 #### i.
