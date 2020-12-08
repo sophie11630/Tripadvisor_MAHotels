@@ -317,7 +317,7 @@ max_rrt = max(right_to_total_dict.values())
 
 print("From the results above, ", end = "") 
 print(*best_mod, sep = ", ", end=" ")
-print("give(s) us the best prediction, and the right-to-total ratio for them is {}.".format(max_rrt))
+print("give(s) us the best prediction, and the right-to-total ratio is {}.".format(max_rrt))
 
 #%%%% Wordcloud
 #quated from https://www.geeksforgeeks.org/generating-word-cloud-python/
